@@ -21,7 +21,7 @@ int main()
 
     fps = cap.get(CAP_PROP_FPS);
     delay = 1000 / fps;
-    total_frame = cap.get(CAP_PROP_FRAME_COUNT); // 전체 프레임 수
+    total_frame = cap.get(CAP_PROP_FRAME_COUNT);
 
     while (cap.get(CAP_PROP_POS_MSEC) <= 3000)
     {
@@ -33,5 +33,5 @@ int main()
         cout << "frames: " << current_frame << " / " << total_frame << endl;
     }
 
-    return 0; 
+    return 0;
 }
